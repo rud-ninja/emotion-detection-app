@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 import base64
 from flask import Flask, request, render_template, flash, redirect
 
-from model_architecture.architecture import resnet
-from detect_emotion import proc_predict
+from packages.architecture import resnet
+from packages import proc_predict
 from io import BytesIO
     
 
