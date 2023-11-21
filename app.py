@@ -20,7 +20,7 @@ def plot_to_base64(fig):
     return image_base64
 
 
-model_path = r"C:\\Users\\hp\\OneDrive\\Documents\\FirstApp\\model.pt"
+model_path = "https://github.com/rud-ninja/emotion-detection-app/blob/master/model.pt"
 torch.manual_seed(9)
 model = resnet()
 model.load_state_dict(torch.load(model_path, map_location=torch.device("cpu")))
