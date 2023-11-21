@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+
+    <h2>Upload a Picture</h2>
+
+    <p>Please try to upload an image with a 1:1 aspect ratio and ensure that only the face is present.</p>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <!-- Input for file selection -->
+        <input required type="file" name="image" accept="image/*">
+
+        <!-- Button to submit the form -->
+        <button type="submit">Upload</button>
+    </form>
+
+
+</body>
+</html>
